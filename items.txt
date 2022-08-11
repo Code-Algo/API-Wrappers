@@ -1,0 +1,8 @@
+
+
+{
+    "name": "Choco Chuck",
+    "desc": "Choco Hamster",
+    "img": "https://produits.bienmanger.com/30131-0w0h0_Funny_Easter_Hedgehog_Milk_Chocolat_Mister.jpg",
+    "price": 29.99
+}
