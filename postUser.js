@@ -1,9 +1,9 @@
 
-const endpoint = '/api/question'
+const endpoint = '/api/User'
 
-const post = async (token, question, cancelToken) =>{
+const post = async (token, user, cancelToken) =>{
     let error
-    const response = await apiClientTokenAuth(token, cancelToken).post(endpoint, {name: question})
+    const response = await apiClientTokenAuth(token, cancelToken).post(endpoint, {name: user})
     if (!response.ok){
         error = "An Unexpected Error Occurred.  Please Try Again Later"  
     }
@@ -12,9 +12,9 @@ const post = async (token, question, cancelToken) =>{
     }
 }
 
-const put = async (token, id, question, cancelToken) =>{
+const put = async (token, user, id, cancelToken) =>{
     let error
-    const response = await apiClientTokenAuth(token, cancelToken).put(endpoint+'/'+id, {name: question})
+    const response = await apiClientTokenAuth(token, cancelToken).put(endpoint+'/'+id, {name: user})
     if (!response.ok){
         error = "An Unexpected Error Occurred.  Please Try Again Later"  
     }
